@@ -36,13 +36,7 @@ var QueryString = function () {
     // add div into side bar
     if(!QueryString.EKXSHOW){ window.location.search = window.location.search + "&EKXSHOW=SHOW&EKXV=5";}
 
-   var e = document.createElement('div');
-   e.id = 'EKX_mywidget';
-   e.width ='600px';
-  if( document.getElementsByClassName('nav-tabs')[0]) {document.getElementsByClassName('nav-tabs')[0].appendChild(e);}
-  if(document.getElementsByClassName('resultsblock')[0]){document.getElementsByClassName('resultsblock')[0].appendChild(e);}
-
-
+  
 
   var script = document.createElement('script');
   var head = document.getElementsByTagName('head')[0];
