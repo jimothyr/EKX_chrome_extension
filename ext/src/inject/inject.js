@@ -34,7 +34,7 @@ var QueryString = function () {
 }();
  
     // add div into side bar
-    if(!QueryString.EKXSHOW){ window.location.search = window.location.search + "&EKXSHOW=SHOW&EKXV=5";}
+    //if(!QueryString.EKXSHOW){ window.location.search = window.location.search + "&EKXSHOW=SHOW";}
 
   
 

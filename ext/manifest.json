@@ -1,6 +1,6 @@
 {
   "name": "EKX : Widget Extension",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "manifest_version": 2,
   "description": "Put EKX widget on pages ENA and UKERC",
   "homepage_url": "https://host-ekx.rhcloud.com",
@@ -30,7 +30,8 @@
     {
       "matches": [
         "http://www.smarternetworks.org/Project.aspx*",
-        "http://ukerc.rl.ac.uk/cgi-bin/era001.pl*",
+        "http://ukerc.rl.ac.uk/cgi-bin/*",
+        "http://ukerc.rl.ac.uk/DC/cgi-bin/*",
         "http://www.ukerc.ac.uk/publications/*",
         "https://www.encraft.co.uk/viewpoints/*",
         "https://host-ekx.rhcloud.com/*"
