@@ -1,8 +1,9 @@
 {
   "name": "EKX : Widget Extension",
-  "version": "0.0.6",
+  "short_name" : "EKX Widget",
+  "version": "0.1",
   "manifest_version": 2,
-  "description": "Put EKX widget on pages ENA and UKERC",
+  "description": "Put EKX widget on ENA and UKERC pages",
   "homepage_url": "https://host-ekx.rhcloud.com",
   "icons": {
     "16": "icons/icon16.png",
@@ -37,8 +38,7 @@
         "https://host-ekx.rhcloud.com/*"
       ],
       "js": [
-        "src/inject/inject.js",
-        "src/inject/widgetscript.js"
+        "src/inject/inject.js"
       ]
     }
   ],
