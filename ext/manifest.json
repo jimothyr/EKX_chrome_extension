@@ -1,7 +1,7 @@
 {
   "name": "EKX : Widget Extension",
   "short_name" : "EKX Widget",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "manifest_version": 2,
   "description": "Put EKX widget on ENA and UKERC pages",
   "homepage_url": "https://host-ekx.rhcloud.com",
@@ -25,6 +25,7 @@
     "http://ukerc.rl.ac.uk/*",
     "http://www.ukerc.ac.uk/*",
     "https://www.encraft.co.uk/*",
+    "http://www.energynetworks.org/*",
     "tabs"
 	],
   "content_scripts": [
@@ -35,7 +36,8 @@
         "http://ukerc.rl.ac.uk/DC/cgi-bin/*",
         "http://www.ukerc.ac.uk/publications/*",
         "https://www.encraft.co.uk/viewpoints/*",
-        "https://host-ekx.rhcloud.com/*"
+        "https://host-ekx.rhcloud.com/*",
+        "http://www.energynetworks.org/*"
       ],
       "js": [
         "src/inject/inject.js"

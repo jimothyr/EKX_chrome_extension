@@ -21,6 +21,7 @@ function setWidget(){
     var loadWidget = false; //to switch off widget where website already has widget on it
     var divloc=""
     var show=true;
+    var widgetStyle='#EKX_mywidget {position: fixed;right: 0;width: 80px;top: 100px; z-index:1000}';
 
  	switch (window.location.hostname){
 
@@ -30,7 +31,7 @@ function setWidget(){
 	 			index = ['.tab-content'];
 	 			container= ['#EKX_mywidget'];
                 divloc=["nav-tabs"];
-	 			addGlobalStyle('#EKX_mywidget {position: fixed;right: 0;width: 100px;top: 100px; z-index:1000}');
+	 			addGlobalStyle(widgetStyle);
  			break;
  			case "ukerc.rl.ac.uk":
                 loadWidget = true
@@ -38,7 +39,7 @@ function setWidget(){
 	 			index = ['.resultsblock','.boundary-box'];
 	 			container= ['#EKX_mywidget'];
                 divloc=['resultsblock','boundary-box'];
-	 			addGlobalStyle('#EKX_mywidget {position: fixed;right: 0;width: 100px;top: 100px; }');
+	 			addGlobalStyle(widgetStyle);
  			break;
             case "www.ukerc.ac.uk":
                 loadWidget = true
@@ -47,7 +48,14 @@ function setWidget(){
                 container= ['#EKX_mywidget'];
                 divloc=["container"]
                 author=document.getElementsByTagName("h6")[0].textContent
-                addGlobalStyle('#EKX_mywidget {position: fixed;right: 0;width: 100px;top: 100px;z-index:1000 }');
+                addGlobalStyle(widgetStyle);
+            break;
+            case "www.energynetworks.org":
+            	loadWidget=true;
+            	title =  document.getElementById("contentArea").getElementsByTagName("h2")[0].textContent;
+            	index = ["#contentArea"];
+            	container= ['#EKX_mywidget'];
+            	addGlobalStyle(widgetStyle);
             break;
             case "www.encraft.co.uk":
             break;
