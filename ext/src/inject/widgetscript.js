@@ -69,9 +69,19 @@ function setWidget(){
 
 }
 
- window.setTimeout(function(){
-	setWidget()
-},1000)
+//  window.setTimeout(function(){
+// 	setWidget()
+// },1000)
+
+window.setTimeout(function waitforWidget(){
+	if (typeof ekxWidget=="undefined"){
+   console.log("no Widget yet")
+   setTimeout(waitforWidget,10)
+	}
+	else
+	{ console.log("widget exists")
+     setWidget()}	
+},10)
 
 //wait till EKX widget exists
 

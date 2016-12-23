@@ -1,7 +1,7 @@
 {
   "name": "EKX : Widget Extension",
   "short_name" : "EKX Widget",
-  "version": "0.1",
+  "version": "0.1.1",
   "manifest_version": 2,
   "description": "Put EKX widget on ENA and UKERC pages",
   "homepage_url": "https://host-ekx.rhcloud.com",
