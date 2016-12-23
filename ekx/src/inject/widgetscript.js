@@ -1,17 +1,5 @@
 console.log("loaded widget setting script")
 
-console.log(typeof ekxWidget)
-
-function addGlobalStyle(css) {
-    var head, style;
-    head = document.getElementsByTagName('head')[0];
-    if (!head) { return; }
-    style = document.createElement('style');
-    style.type = 'text/css';
-    style.innerHTML = css;
-    head.appendChild(style);
-}
-
 function setWidget(){
 	console.log("setting widget")
 	var title ="";
@@ -62,9 +50,8 @@ function setWidget(){
  	}
 
 		if(loadWidget){
-		    makeDiv(divloc)
-
-
+		    makeDiv(divloc)//create div
+		    //create new widget instance
 		    var EKXWidget = new ekxWidget({
 		 				container : container,
 		 			//	follow : ['pdf'],
@@ -74,27 +61,7 @@ function setWidget(){
 		                show:show
 		            }) 
 		    }
-
 }
-
-//  window.setTimeout(function(){
-// 	setWidget()
-// },1000)
-
-window.setTimeout(function waitforWidget(){
-	if (typeof ekxWidget=="undefined"){
-   console.log("no Widget yet")
-   setTimeout(waitforWidget,10)
-	}
-	else
-	{ console.log("widget exists")
-     setWidget()}	
-},10)
-
-//wait till EKX widget exists
-
-
-//window.onload(setWidget())
 
 function makeDiv(obj){
     
@@ -105,12 +72,30 @@ function makeDiv(obj){
     if (obj.length==0){document.body.appendChild(e)}
     else {
    for (i=0;i<obj.length;i++){
-   	console.log(obj[i])
+   	console.log("appending widget div to " + obj[i])
          if( document.getElementsByClassName(obj[i])[0]) {document.getElementsByClassName(obj[i])[0].appendChild(e)}
         }
     }
-
 }
 
+function addGlobalStyle(css) {
+    var head, style;
+    head = document.getElementsByTagName('head')[0];
+    if (!head) { return; }
+    style = document.createElement('style');
+    style.type = 'text/css';
+    style.innerHTML = css;
+    head.appendChild(style);
+}
 
+//wait till ekxwidget exists then setting widget
+window.setTimeout(function waitforWidget(){
+	if (typeof ekxWidget=="undefined"){
+   console.log("no Widget yet")
+   setTimeout(waitforWidget,10)
+	}
+	else
+	{console.log("widget exists")
+     setWidget()}	
+},10)
 
