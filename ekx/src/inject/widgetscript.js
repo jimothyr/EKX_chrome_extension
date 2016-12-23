@@ -89,10 +89,16 @@ function addGlobalStyle(css) {
 }
 
 //wait till ekxwidget exists then setting widget
+var l=0
 window.setTimeout(function waitforWidget(){
 	if (typeof ekxWidget=="undefined"){
+   l++
    console.log("no Widget yet")
-   setTimeout(waitforWidget,10)
+   if(l<1000){setTimeout(waitforWidget,10)}
+	//console.log(l)
+	//setTimeout(waitforWidget,10)
+
+
 	}
 	else
 	{console.log("widget exists")
