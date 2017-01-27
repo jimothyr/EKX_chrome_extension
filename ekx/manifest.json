@@ -40,19 +40,23 @@
         "http://www.energynetworks.org/*",
         "http://www.cornwall-insight.com/newsroom/*",
         "https://www.cornwall-insight.com/newsroom/*",
-        "https://www.ofgem.gov.uk/government/publications*",
+        "https://www.gov.uk/government/publications*",
         "https://www.gov.uk/government/statistics*",
+        "https://www.gov.uk/government/statistical-data-sets*",
         "https://www.gov.uk/government/policies",
-        "https://www.gov.uk/government/publications",
-        "http://www2.nationalgrid.com/UK/industry-information/*",
-        "https://www2.nationalgrid.com/UK/industry-information/*",
+        "http://www2.nationalgrid.com/*/*/*",
+        "https://www2.nationalgrid.com/*/*/*",
         "http://www.sciencedirect.com/science/article/*",
         "https://www.sciencedirect.com/science/article/*",
         "http://www.energy-uk.org.uk/energy-industry/*",
         "https://www.energy-uk.org.uk/energy-industry/*",//uk-article
         "http://www.energy-uk.org.uk/policy/*",
-        "https://www.energy-uk.org.uk/policy/*" //uk-article
-
+        "https://www.energy-uk.org.uk/policy/*", //uk-article
+              "http://www.energy-uk.org.uk/customers/*",
+        "https://www.energy-uk.org.uk/customers/*",
+              "http://www.energy-uk.org.uk/publication/*",
+        "https://www.energy-uk.org.uk/publication/*",
+        "https://www.ofgem.gov.uk/*/*"
       ],
       "js": [
         "src/inject/inject.js"
