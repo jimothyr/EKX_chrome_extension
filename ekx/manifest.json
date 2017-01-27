@@ -1,7 +1,7 @@
 {
   "name": "EKX : Widget Extension",
   "short_name" : "EKX Widget",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "manifest_version": 2,
   "description": "Put EKX widget on ENA and UKERC pages",
   "homepage_url": "https://host-ekx.rhcloud.com",
@@ -36,8 +36,23 @@
         "http://ukerc.rl.ac.uk/DC/cgi-bin/*",
         "http://www.ukerc.ac.uk/publications/*",
         "https://www.encraft.co.uk/viewpoints/*",
-        "https://host-ekx.rhcloud.com/*",
-        "http://www.energynetworks.org/*"
+       // "https://host-ekx.rhcloud.com/*",
+        "http://www.energynetworks.org/*",
+        "http://www.cornwall-insight.com/newsroom/*",
+        "https://www.cornwall-insight.com/newsroom/*",
+        "https://www.ofgem.gov.uk/government/publications*",
+        "https://www.gov.uk/government/statistics*",
+        "https://www.gov.uk/government/policies",
+        "https://www.gov.uk/government/publications",
+        "http://www2.nationalgrid.com/UK/industry-information/*",
+        "https://www2.nationalgrid.com/UK/industry-information/*",
+        "http://www.sciencedirect.com/science/article/*",
+        "https://www.sciencedirect.com/science/article/*",
+        "http://www.energy-uk.org.uk/energy-industry/*",
+        "https://www.energy-uk.org.uk/energy-industry/*",//uk-article
+        "http://www.energy-uk.org.uk/policy/*",
+        "https://www.energy-uk.org.uk/policy/*" //uk-article
+
       ],
       "js": [
         "src/inject/inject.js"
