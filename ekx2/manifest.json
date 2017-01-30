@@ -1,9 +1,9 @@
 {
   "name": "EKX : Widget Extension",
-  "short_name" : "EKX Widget",
-  "version": "0.1.4",
+  "short_name" : "EKX Widget inside chrome",
+  "version": "2.0.0",
   "manifest_version": 2,
-  "description": "Put EKX widget on ENA and UKERC pages",
+  "description": "Put EKX widget on webpages inside chrome framework.",
   "homepage_url": "https://host-ekx.rhcloud.com",
   "icons": {
     "16": "icons/icon16.png",
